@@ -81,7 +81,8 @@ window.addEventListener("load", function(){
       document.getElementById("launchStatus").innerHTML = "Shuttle is ready for launch";
    };
    let json = [];
-   let index = 0;
+   //BONUS MISSION, choose planet randomly
+   let index = Math.round(Math.random()*6);
       // TODO: fetch planets JSON
    fetch("https://handlers.education.launchcode.org/static/planets.json").then(function(response){
       //TODO: index 3 (Mars)
